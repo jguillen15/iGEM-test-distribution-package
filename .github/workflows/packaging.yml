@@ -30,11 +30,6 @@ jobs:
         uses: actions/checkout@v3
       - name: retrieve_parts
         uses: ./.github/actions/retrieve_parts
-      - name: Configure Git
-        run: |
-        git add iGEM_raw_imports.fasta
-        git commit -m "Commit changes"
-
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
